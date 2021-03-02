@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 
     let apiClassJson = JSON.stringify(apiClass);
 
-    res.send(`Serialized ApiClass instance ${apiClass}`);
+    res.send(`Serialized ApiClass instance ${apiClassJson}`);
 });
 
 const port = process.env.PORT || 3000;

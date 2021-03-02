@@ -1,4 +1,4 @@
-export class apiClass {
+export class ApiClass {
 
     constructor(aProperty:string)
     {

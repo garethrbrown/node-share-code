@@ -1,16 +1,16 @@
 import express from 'express';
 
-// import { TestTimer } from 'outln-common/scripts/testTimer';
+import { ApiClass } from 'example-shared/apiClass';
 
 const app = express();
 
 app.get('/', (req, res) => {
 
-    //let roamPage = new TestTimer('hello');
+    let apiClass = new ApiClass('hello');
 
-    //let testTimerJson = JSON.stringify(roamPage);
+    let apiClassJson = JSON.stringify(apiClass);
 
-    res.send('Hello from express and typescript!');
+    res.send(`Serialized ApiClass instance ${apiClass}`);
 });
 
 const port = process.env.PORT || 3000;
